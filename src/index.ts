@@ -1,5 +1,5 @@
 require("@babel/register")();
-import { BasiliskGame } from "./BasiliskGame";
+import { BasiliskGame } from "./basiliskGame/BasiliskGame";
 
 require("dotenv").config();
 

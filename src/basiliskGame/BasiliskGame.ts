@@ -1,5 +1,5 @@
-import { DiscordConnector } from "./DiscordConnector";
-import { sleep } from "./utils";
+import { DiscordConnector } from "../DiscordConnector";
+import { sleep } from "../utils";
 
 class BasiliskGame {
   #connector: DiscordConnector;
