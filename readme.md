@@ -2,6 +2,9 @@
 #How to get started
 
 ## Download nodejs from https://nodejs.org/en/
+
+## Install ts-node globaly
+### npm i ts-node -g 
 ## Npm install
 - ### open a terminal
 - ### navigate to porject root
@@ -12,8 +15,8 @@
 - ### send a message and read the request to find channelId, authenticationToken(in the request header), and userId.
 ## Create a .env file, and fill it with:
 - ### DISCORD_CHANNEL_ID={YourChannelId}
-- ### DISCORD_AUTHENTICATION_TOKEN={YourAuthenticationToken}
-- ### DISCORD_USER_ID={YourUserId}
+- ### DISCORD_AUTHENTICATION_TOKEN=YourAuthenticationToken
+- ### DISCORD_USER_ID=YourUserId
 
 ## Npm start from project root
 ## To run dev, install nodemon globaly with -g flag
