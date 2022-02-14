@@ -18,13 +18,13 @@ class SpamBot {
     _intervalTimerTo: number
   ) {
     this.#connector = new DiscordConnector(_channelId, _authorizationToken);
-    this.#setPhraseList();
+    this.#setPhraseList(phraselist);
     this.#intervalTimerFrom = _intervalTimerFrom;
     this.#intervalTimerTo = _intervalTimerTo;
   }
 
-  #setPhraseList() {
-    this.#phraseList = phraselist;
+  #setPhraseList(_phraseList: string[]) {
+    this.#phraseList = [..._phraseList];
   }
 
   #removeIndexFromPhraseList(index: number) {
@@ -41,7 +41,7 @@ class SpamBot {
       this.#removeIndexFromPhraseList(randIndex);
       return phrase;
     } else {
-      this.#setPhraseList();
+      this.#setPhraseList(phraselist);
       return this.#getRandomPhrase();
     }
   }
