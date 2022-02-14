@@ -15,7 +15,7 @@ class SpamBot {
     _authorizationToken: string,
     _channelId: string,
     _intervalTimerFrom: number,
-    _intervalTimerTo
+    _intervalTimerTo: number
   ) {
     this.#connector = new DiscordConnector(_channelId, _authorizationToken);
     this.#setPhraseList();
